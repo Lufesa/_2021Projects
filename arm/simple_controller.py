@@ -36,35 +36,32 @@ try:
                 print("Wrong angle value inputed \n")  
             else:
                 servoA.ChangeDutyCycle(2+(angle/18))
-                print("Angle value changed to" + data2[1] + "\n") 
+                print("Angle value changed to " + data2[1] + "\n") 
 
         elif data2[0] == "B":
             print("Second motor turning\n")
-            print("First motor turning\n")
             angle = float(data2[1])
             if (angle<0) or (angle>180):
                 print("Wrong angle value inputed \n")  
             else:
                 servoB.ChangeDutyCycle(2+(angle/18))
-                print("Angle value changed to" + data2[1] + "\n") 
+                print("Angle value changed to " + data2[1] + "\n") 
         elif data2[0] == "C":
             print("Third motor turning\n")
-            print("First motor turning\n")
             angle = float(data2[1])
             if (angle<0) or (angle>180):
                 print("Wrong angle value inputed \n")  
             else:
                 servoC.ChangeDutyCycle(2+(angle/18))
-                print("Angle value changed to" + data2[1] + "\n") 
+                print("Angle value changed to " + data2[1] + "\n") 
         elif data2[0] == "D":
             print("Fourth motor turning\n")
-            print("First motor turning\n")
             angle = float(data2[1])
             if (angle<150) or (angle>180):
                 print("Wrong angle value inputed \n")  
             else:
                 servoA.ChangeDutyCycle(2+(angle/18))
-                print("Angle value changed to" + data2[1] + "\n") 
+                print("Angle value changed to " + data2[1] + "\n") 
         else:
             print("Not recognized this input : " + data2[0]+"\n")
 
