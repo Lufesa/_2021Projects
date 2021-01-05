@@ -3,12 +3,16 @@
 import pigpio
 import time
 
-pigpio.start()
+pi = pigpio.pi()
+
+
+
+
 
 try:
     while True:
         data = float(str(input('Enter angle between 0 & 180: ')))
-        pigpio.set_servo_pulsewidth(18, data)
+        pi.set_servo_pulsewidth(22, data)
         # data2 = data.split(', ')
         # if data2[0] == "A":
         #     print("First motor turning\n")
@@ -48,5 +52,5 @@ try:
 
 finally:
     # Clean things up at the end
-    pigpio.stop()
-    print("Done !")
+    pi.stop()
+    print("Done ! Should be clean now")
